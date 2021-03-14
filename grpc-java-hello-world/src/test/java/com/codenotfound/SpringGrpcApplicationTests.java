@@ -18,6 +18,6 @@ public class SpringGrpcApplicationTests {
   @Test
   public void testSayHello() {
     assertThat(helloWorldClient.sayHello("John", "Doe"))
-        .isEqualTo("Hello John Doe!");
+        .isEqualTo("Hello John Doe! 15");
   }
 }

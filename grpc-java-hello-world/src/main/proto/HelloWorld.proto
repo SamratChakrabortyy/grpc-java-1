@@ -10,6 +10,7 @@ message Person {
 
 message Greeting {
   string message = 1;
+  int32 count = 2;
 }
 
 service HelloWorldService {

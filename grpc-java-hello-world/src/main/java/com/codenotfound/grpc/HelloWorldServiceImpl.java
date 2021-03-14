@@ -23,7 +23,7 @@ public class HelloWorldServiceImpl
     String message = "Hello " + request.getFirstName() + " "
         + request.getLastName() + "!";
     Greeting greeting =
-        Greeting.newBuilder().setMessage(message).build();
+        Greeting.newBuilder().setMessage(message).setCount(message.length()).build();
     LOGGER.info("server responded {}", greeting);
 
     responseObserver.onNext(greeting);

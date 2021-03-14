@@ -36,6 +36,6 @@ public class HelloWorldClient {
         helloWorldServiceBlockingStub.sayHello(person);
     LOGGER.info("client received {}", greeting);
 
-    return greeting.getMessage();
+    return greeting.getMessage() + " "+ greeting.getCount();
   }
 }
